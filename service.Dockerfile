@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=UTC
 
 RUN apt-get update \
-&& apt-get install -y openssh-server python3.8-venv python3-pip \
+&& apt-get install -y openssh-server python3.8-venv python3-pip git \
 && pip3 install -U pip wheel setuptools \
 && mkdir /run/sshd
 
