@@ -7,8 +7,17 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=UTC
 
 RUN apt-get update \
-&& apt-get install -y openssh-server python3.8-venv python3-pip git \
-&& pip3 install -U pip wheel setuptools \
+&& apt-get install -y \
+openssh-server \
+python3.8-dev \
+python3.8-venv \
+python3-pip \
+python3-wheel \
+python3-setuptools \
+git \
+net-tools \
+iputils-ping \
+tmux \
 && mkdir /run/sshd
 
 ADD root_id_rsa /root/.ssh/id_rsa

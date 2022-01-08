@@ -6,3 +6,7 @@ services:
       - "2222:22"
     volumes:
       - ../:/code
+networks:
+  default:
+    external: true
+    name: my-postgres_default
