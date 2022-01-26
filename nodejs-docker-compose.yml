@@ -1,0 +1,13 @@
+services:
+  node-host:
+    build:
+      dockerfile: node-service.Dockerfile
+    ports:
+      - "2223:22"
+      - "4200:4200"
+    volumes:
+      - ../:/code
+# networks:
+#   default:
+#     external: true
+#     name: my-postgres_default

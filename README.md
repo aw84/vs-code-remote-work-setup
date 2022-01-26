@@ -5,10 +5,10 @@ Image to run SSH server with configuration from `sshd_config`.
 
 # Docker compose
 
-To orchiestrate SSH server execution and port, volume configuration
+To orchestrate SSH server execution and port, volume configuration
 
 ## Setting up database
-Database service must be run withint separate project `-p <project-name>`
+Database service must be run within separate project `-p <project-name>`
 ```
 docker-compose -p my-postgres -f .\db-docker-compose.yml up -d
 ```
@@ -18,7 +18,7 @@ docker-compose -f .\docker-compose.yml up -d
 ```
 
 # VS Code Remote SSH
-* intall python formatter
+* install python formatter
 ## ssh-keygen
 Generate key-pair and set correct permission (on Windows)
 ## ~/.ssh/config (on Windows)
